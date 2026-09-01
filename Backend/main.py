@@ -6,6 +6,11 @@ import json
 # Initialize the API. This automatically builds documentation at /docs
 app = FastAPI(title="Instant Mechanic API")
 
+# Add this new route right here:
+@app.get("/")
+async def root():
+    return {"message": "Instant Mechanic API is live!", "docs": "/docs"}
+
 # 1. CORS Setup
 app.add_middleware(
     CORSMiddleware,
