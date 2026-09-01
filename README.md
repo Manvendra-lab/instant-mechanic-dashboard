@@ -20,6 +20,13 @@ Backend
   ↓
 Database (MongoDB Atlas cluster)
 
+## Bonus Features Implemented
+* **WebSockets:** Integrated real-time status updates via WebSocket connection manager so the dashboard reflects changes without a page reload.
+* **Swagger/OpenAPI:** Auto-generated interactive API documentation available at the `/docs` endpoint via FastAPI.
+* **API Rate Limiting:** Implemented `slowapi` to throttle incoming requests and protect backend endpoints.
+* **Advanced Filters:** Built a chained filtering system utilizing a live search bar and dynamic sidebar category tabs.
+* **Responsive Mobile Dashboard:** Utilized Tailwind CSS to ensure the layout seamlessly adapts to mobile screens.
+
 ## Local Setup
 1. Clone the repository: `git clone <repo-link>`
 2. **Backend:** 
